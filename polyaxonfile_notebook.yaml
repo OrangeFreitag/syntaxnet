@@ -1,0 +1,8 @@
+version: 1
+
+kind: notebook
+
+build:
+  image: brianlow/syntaxnet-docker
+  build_steps:
+    - pip3 install jupyter

@@ -1,0 +1,13 @@
+version: 1
+
+kind: experiment
+
+build:
+  image: brianlow/syntaxnet-docker # docker image to be used
+  build_steps: # add build steps for the image
+    - pip install polyaxon-client
+    - pip install pandas
+    - pip install scikit-learn
+    
+run:
+  cmd: python model.py # command to be executed. Can also invoke a perl script :) 
